@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ExplorePage from "@/features/explore/ExplorePage";
 import DonationReturnPage from "@/features/donate/DonationReturnPage";
+import DevBuildingPage from "@/features/building/DevBuildingPage";
 
 const LoginPage = lazy(() => import("@/features/crm/LoginPage"));
 const DashboardPage = lazy(() => import("@/features/crm/DashboardPage"));
@@ -13,6 +14,7 @@ const BlocksPage = lazy(() => import("@/features/crm/BlocksPage"));
 const BlockEditPage = lazy(() => import("@/features/crm/BlockEditPage"));
 const DonationsPage = lazy(() => import("@/features/crm/DonationsPage"));
 const SettingsPage = lazy(() => import("@/features/crm/SettingsPage"));
+const RequireAdmin = lazy(() => import("@/features/crm/RequireAdmin"));
 
 const queryClient = new QueryClient();
 
@@ -31,12 +33,14 @@ function CrmRoutes() {
     <Suspense fallback={<CrmFallback />}>
       <Routes>
         <Route path="login" element={<LoginPage />} />
-        <Route index element={<DashboardPage />} />
-        <Route path="blocks" element={<BlocksPage />} />
-        <Route path="blocks/new" element={<BlockEditPage />} />
-        <Route path="blocks/:id" element={<BlockEditPage />} />
-        <Route path="donations" element={<DonationsPage />} />
-        <Route path="settings" element={<SettingsPage />} />
+        <Route element={<RequireAdmin />}>
+          <Route index element={<DashboardPage />} />
+          <Route path="blocks" element={<BlocksPage />} />
+          <Route path="blocks/new" element={<BlockEditPage />} />
+          <Route path="blocks/:id" element={<BlockEditPage />} />
+          <Route path="donations" element={<DonationsPage />} />
+          <Route path="settings" element={<SettingsPage />} />
+        </Route>
       </Routes>
     </Suspense>
   );
@@ -49,6 +53,7 @@ export default function App() {
         <TooltipProvider>
           <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
+              <Route path="/dev/3d" element={<DevBuildingPage />} />
               <Route path="/" element={<ExplorePage />} />
               <Route path="/f/:floor" element={<ExplorePage />} />
               <Route path="/b/:code" element={<ExplorePage />} />
