@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost/c.cpanel/3d_stall_design_web/NIH/backend/api',
+        target: 'http://localhost/c.cpanel/3d_stall_design_web/NIH/backend',
         changeOrigin: true,
         rewrite: (requestPath) => requestPath.replace(/^\/api/, ''),
       },
