@@ -83,6 +83,8 @@ function building_payload(): array
             'face' => $row['face'],
             'windowStart' => (int)$row['window_start'],
             'windowSpan' => (int)$row['window_span'],
+            'slotKey' => $row['slot_key'],
+            'lit' => $isLit,
             'isLit' => $isLit,
             'donorCount' => $donorCount,
             'isClosed' => $donationMode === 'single' && $isLit,
@@ -169,6 +171,7 @@ function admin_block_payload(array $row, bool $detailed = false): array
     $payload = [
         'id' => (int)$row['id'],
         'code' => $row['code'],
+        'slotKey' => $row['slot_key'],
         'name' => $row['name'],
         'tagline' => $row['tagline'],
         'floor' => (int)$row['floor'],
@@ -222,6 +225,7 @@ function validate_block_payload(array $body, array $existing = []): array
         'face' => merge_block_value($body, $existing, 'face', 'face'),
         'windowStart' => merge_block_value($body, $existing, 'windowStart', 'window_start', 'int'),
         'windowSpan' => merge_block_value($body, $existing, 'windowSpan', 'window_span', 'int'),
+        'slotKey' => merge_block_value($body, $existing, 'slotKey', 'slot_key'),
         'storyHtml' => merge_block_value($body, $existing, 'storyHtml', 'story_html'),
         'sortOrder' => merge_block_value($body, $existing, 'sortOrder', 'sort_order', 'int'),
         'isPublished' => merge_block_value($body, $existing, 'isPublished', 'is_published', 'bool'),
@@ -256,6 +260,7 @@ function validate_block_payload(array $body, array $existing = []): array
         'face' => $face,
         'windowStart' => $windowStart,
         'windowSpan' => $windowSpan,
+        'slotKey' => field_slot_key($source, 'slotKey'),
         'storyHtml' => field_string($source, 'storyHtml', false, 200000) ?? '',
         'sortOrder' => field_int($source, 'sortOrder', false, -1000000, 1000000) ?? 0,
         'isPublished' => field_bool($source, 'isPublished', false) ?? false,
@@ -278,19 +283,44 @@ function assert_window_free(int $floor, string $face, int $start, int $span, ?in
     }
 }
 
+function assert_slot_free(?string $slotKey, ?int $excludeId): void
+{
+    if ($slotKey === null) {
+        return;
+    }
+    $sql = 'SELECT code FROM blocks WHERE slot_key = ?';
+    $params = [$slotKey];
+    if ($excludeId !== null) {
+        $sql .= ' AND id <> ?';
+        $params[] = $excludeId;
+    }
+    $stmt = db()->prepare($sql . ' LIMIT 1');
+    $stmt->execute($params);
+    $code = $stmt->fetchColumn();
+    if ($code !== false) {
+        fail('slot_taken', 'Slot ' . $slotKey . ' is already used by block ' . $code . '.', 422);
+    }
+}
+
 function is_duplicate_key(PDOException $exception): bool
 {
     return (string)$exception->getCode() === '23000' || (int)($exception->errorInfo[1] ?? 0) === 1062;
+}
+
+function is_slot_conflict(PDOException $exception): bool
+{
+    return str_contains((string)($exception->errorInfo[2] ?? ''), 'uq_blocks_slot');
 }
 
 function create_admin_block(array $body): array
 {
     $input = validate_block_payload($body);
     assert_window_free($input['floor'], $input['face'], $input['windowStart'], $input['windowSpan'], null);
+    assert_slot_free($input['slotKey'], null);
 
     $stmt = db()->prepare(
-        'INSERT INTO blocks (code, name, tagline, floor, face, window_start, window_span, story_html, sort_order, is_published)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+        'INSERT INTO blocks (code, name, tagline, floor, face, window_start, window_span, slot_key, story_html, sort_order, is_published)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
     try {
         $stmt->execute([
@@ -301,12 +331,16 @@ function create_admin_block(array $body): array
             $input['face'],
             $input['windowStart'],
             $input['windowSpan'],
+            $input['slotKey'],
             $input['storyHtml'],
             $input['sortOrder'],
             $input['isPublished'] ? 1 : 0,
         ]);
     } catch (PDOException $exception) {
         if (is_duplicate_key($exception)) {
+            if (is_slot_conflict($exception)) {
+                fail('slot_taken', 'That slot is already assigned to another block.', 422);
+            }
             fail('code_taken', 'A block with this code already exists.', 409);
         }
         throw $exception;
@@ -320,10 +354,11 @@ function update_admin_block(int $blockId, array $body): array
     $existing = find_admin_block($blockId);
     $input = validate_block_payload($body, $existing);
     assert_window_free($input['floor'], $input['face'], $input['windowStart'], $input['windowSpan'], $blockId);
+    assert_slot_free($input['slotKey'], $blockId);
 
     $stmt = db()->prepare(
         'UPDATE blocks SET code = ?, name = ?, tagline = ?, floor = ?, face = ?, window_start = ?,
-         window_span = ?, story_html = ?, sort_order = ?, is_published = ? WHERE id = ?'
+         window_span = ?, slot_key = ?, story_html = ?, sort_order = ?, is_published = ? WHERE id = ?'
     );
     try {
         $stmt->execute([
@@ -334,6 +369,7 @@ function update_admin_block(int $blockId, array $body): array
             $input['face'],
             $input['windowStart'],
             $input['windowSpan'],
+            $input['slotKey'],
             $input['storyHtml'],
             $input['sortOrder'],
             $input['isPublished'] ? 1 : 0,
@@ -341,6 +377,9 @@ function update_admin_block(int $blockId, array $body): array
         ]);
     } catch (PDOException $exception) {
         if (is_duplicate_key($exception)) {
+            if (is_slot_conflict($exception)) {
+                fail('slot_taken', 'That slot is already assigned to another block.', 422);
+            }
             fail('code_taken', 'A block with this code already exists.', 409);
         }
         throw $exception;

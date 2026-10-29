@@ -1,0 +1,374 @@
+[     600ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:15557
+[     785ms] [ERROR] React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. asChild aschild @ http://localhost:5173/@vite/client:367
+[     968ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ExplorePage>
+      <main className="min-h-[100...">
+        <section className="mx-auto ma...">
+          <div>
+          <div id="building" className={"relative..."}>
+            <div className="absolute i...">
+              <SiteNav>
+                <header className="fixed inse...">
+                  <nav className="mx-auto fl...">
+                    <LinkWithRef>
+                    <div>
+                    <div>
+                    <div className="flex items...">
+                      <ThemeToggle>
+                      <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                        <DialogRoot data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                          <SheetTrigger asChild={true}>
+                            <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+>                             <button
+>                               type="button"
+>                               onClick={function}
+>                               onMouseDown={function}
+>                               onKeyDown={function}
+>                               onKeyUp={function}
+>                               onPointerDown={function}
+>                               tabIndex={0}
+>                               disabled={false}
+>                               data-base-ui-click-trigger=""
+>                               id="base-ui-_r_4_"
+>                               aria-haspopup="dialog"
+>                               aria-expanded={false}
+>                               aria-controls={undefined}
+>                               data-slot="sheet-trigger"
+>                               asChild={true}
+>                               ref={function}
+>                             >
+                                <Button variant="ghost" size="icon" aria-label="Open navig...">
+                                  <Button data-slot="button" className={"group/bu..."} aria-label="Open navig...">
+>                                   <button
+>                                     type="button"
+>                                     onClick={function}
+>                                     onMouseDown={function}
+>                                     onKeyDown={function}
+>                                     onKeyUp={function}
+>                                     onPointerDown={function}
+>                                     tabIndex={0}
+>                                     disabled={false}
+>                                     data-slot="button"
+>                                     aria-label="Open navigation menu"
+>                                     ref={function}
+>                                     className={"group/button inline-flex shrink-0 items-center justify-center round..."}
+>                                   >
+                          ...
+            ...
+          ...
+        ...
+ @ http://localhost:5173/@vite/client:367
+[     968ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/@vite/client:367
+[    9194ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[    9246ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[    9288ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[    9333ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[    9366ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   42382ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/App.jsx?t=1793301641467:0
+[   42383ms] [ERROR] [vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[   59903ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   68044ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   68086ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   68138ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   68549ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   68575ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   68617ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   69111ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   69166ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   69211ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   75337ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   75338ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   75946ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   94978ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   95020ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   96684ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   96731ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   96759ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   96783ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   98754ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   98771ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   98787ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   98815ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   98844ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   99109ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   99115ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   99154ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[   99198ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  104807ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  104834ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  104860ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  104876ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  104917ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107173ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107184ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107215ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107476ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107509ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107515ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107537ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107544ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107898ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107926ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  107956ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  113140ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  113161ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  113215ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  113244ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  114028ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  114039ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  114106ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  114778ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  114849ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  116543ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  116623ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  117706ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  117819ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  118067ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  118488ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  118517ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  118549ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  120332ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  120352ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  120414ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  121943ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  122035ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  122205ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  122978ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  123056ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  123590ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125152ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125232ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125429ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125694ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125727ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125771ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  125829ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  127857ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  128161ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  128260ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  128343ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  132030ms] [ERROR] Unable to preventDefault inside passive event listener invocation. @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:1968
+[  187566ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/building/BuildingStage.jsx?t=1793301787835:0
+[  187566ms] [ERROR] [vite] Failed to reload /src/features/building/BuildingStage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  191104ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/building/BuildingStage.jsx?t=1793301791590:0
+[  191104ms] [ERROR] [vite] Failed to reload /src/features/explore/ExplorePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  217448ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/explore/ExplorePage.jsx?t=1793301817856:0
+[  217451ms] [ERROR] [vite] Failed to reload /src/features/explore/ExplorePage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  265856ms] TypeError: Cannot read properties of undefined (reading 'subscribe')
+    at P (http://localhost:5173/node_modules/.vite/deps/cmdk.js?v=54ecc2b3:2697:45)
+    at http://localhost:5173/node_modules/.vite/deps/cmdk.js?v=54ecc2b3:2572:73
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:13895:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:4153:19)
+    at updateForwardRef (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:5350:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:6208:21)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:697:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:8901:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:8797:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:8781:6)
+[  265856ms] [WARNING] %s
+
+%s
+ An error occurred in the <ForwardRef> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/@vite/client:367
+[  269188ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:15557
+[  269348ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ExplorePage>
+      <main className="dark relat...">
+        <SiteNav>
+          <header className="fixed inse...">
+            <nav className="glass-pane...">
+              <LinkWithRef>
+              <div>
+              <button>
+              <MobileMenu onDonate={function goToBuilding}>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogRoot data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+>                       <button
+>                         type="button"
+>                         onClick={function}
+>                         onMouseDown={function}
+>                         onKeyDown={function}
+>                         onKeyUp={function}
+>                         onPointerDown={function}
+>                         tabIndex={0}
+>                         disabled={false}
+>                         data-base-ui-click-trigger=""
+>                         id="base-ui-_r_1_"
+>                         aria-haspopup="dialog"
+>                         aria-expanded={false}
+>                         aria-controls={undefined}
+>                         data-slot="sheet-trigger"
+>                         asChild={true}
+>                         ref={function}
+>                       >
+>                         <button
+>                           type="button"
+>                           aria-label="Open menu"
+>                           className="grid size-9 place-items-center text-white/80 md:hidden"
+>                         >
+                    ...
+        ...
+ @ http://localhost:5173/@vite/client:367
+[  269349ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/@vite/client:367
+[  269349ms] [ERROR] React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. asChild aschild @ http://localhost:5173/@vite/client:367
+[  295281ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  364682ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:15557
+[  364816ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ExplorePage>
+      <main className="dark fixed...">
+        <SiteNav>
+          <header className="fixed inse...">
+            <nav className="glass-pane...">
+              <LinkWithRef>
+              <div>
+              <button>
+              <MobileMenu onDonate={function goToBuilding}>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogRoot data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+>                       <button
+>                         type="button"
+>                         onClick={function}
+>                         onMouseDown={function}
+>                         onKeyDown={function}
+>                         onKeyUp={function}
+>                         onPointerDown={function}
+>                         tabIndex={0}
+>                         disabled={false}
+>                         data-base-ui-click-trigger=""
+>                         id="base-ui-_r_1_"
+>                         aria-haspopup="dialog"
+>                         aria-expanded={false}
+>                         aria-controls={undefined}
+>                         data-slot="sheet-trigger"
+>                         asChild={true}
+>                         ref={function}
+>                       >
+>                         <button
+>                           type="button"
+>                           aria-label="Open menu"
+>                           className="grid size-9 place-items-center text-white/80 md:hidden"
+>                         >
+                    ...
+        ...
+ @ http://localhost:5173/@vite/client:367
+[  364818ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/@vite/client:367
+[  364819ms] [ERROR] React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. asChild aschild @ http://localhost:5173/@vite/client:367
+[  386312ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/block/MediaGallery.jsx?t=1793301986635:0
+[  386313ms] [ERROR] [vite] Failed to reload /src/features/block/MediaGallery.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  414038ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/block/SlotModal.jsx?t=1793302014480:0
+[  414039ms] [ERROR] [vite] Failed to reload /src/features/block/SlotModal.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  476388ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:15557
+[  476532ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ExplorePage>
+      <main className="dark fixed...">
+        <SiteNav>
+          <header className="fixed inse...">
+            <nav className="glass-pane...">
+              <LinkWithRef>
+              <div>
+              <button>
+              <MobileMenu onDonate={function goToBuilding}>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogRoot data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+>                       <button
+>                         type="button"
+>                         onClick={function}
+>                         onMouseDown={function}
+>                         onKeyDown={function}
+>                         onKeyUp={function}
+>                         onPointerDown={function}
+>                         tabIndex={0}
+>                         disabled={false}
+>                         data-base-ui-click-trigger=""
+>                         id="base-ui-_r_1_"
+>                         aria-haspopup="dialog"
+>                         aria-expanded={false}
+>                         aria-controls={undefined}
+>                         data-slot="sheet-trigger"
+>                         asChild={true}
+>                         ref={function}
+>                       >
+>                         <button
+>                           type="button"
+>                           aria-label="Open menu"
+>                           className="grid size-9 place-items-center text-white/80 md:hidden"
+>                         >
+                    ...
+        ...
+ @ http://localhost:5173/@vite/client:367
+[  476533ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/@vite/client:367
+[  476534ms] [ERROR] React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. asChild aschild @ http://localhost:5173/@vite/client:367
+[  524135ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  538514ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/contact/ContactPage.jsx?t=1793302138973:0
+[  538515ms] [ERROR] [vite] Failed to reload /src/features/contact/ContactPage.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  555976ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/src/features/home/NihSections.jsx?t=1793302156485:0
+[  555977ms] [ERROR] [vite] Failed to reload /src/features/home/NihSections.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:367
+[  565083ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/client-D7P7Zikj.js?v=54ecc2b3:15557
+[  565179ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ExplorePage>
+      <main className="dark fixed...">
+        <SiteNav>
+          <header className="fixed inse...">
+            <nav className="glass-pane...">
+              <LinkWithRef>
+              <div>
+              <button>
+              <MobileMenu onDonate={function goToBuilding}>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <DialogRoot data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <SheetTrigger asChild={true}>
+                      <DialogTrigger data-slot="sheet-trigger" asChild={true}>
+>                       <button
+>                         type="button"
+>                         onClick={function}
+>                         onMouseDown={function}
+>                         onKeyDown={function}
+>                         onKeyUp={function}
+>                         onPointerDown={function}
+>                         tabIndex={0}
+>                         disabled={false}
+>                         data-base-ui-click-trigger=""
+>                         id="base-ui-_r_1_"
+>                         aria-haspopup="dialog"
+>                         aria-expanded={false}
+>                         aria-controls={undefined}
+>                         data-slot="sheet-trigger"
+>                         asChild={true}
+>                         ref={function}
+>                       >
+>                         <button
+>                           type="button"
+>                           aria-label="Open menu"
+>                           className="grid size-9 place-items-center text-white/80 md:hidden"
+>                         >
+                    ...
+        ...
+ @ http://localhost:5173/@vite/client:367
+[  565180ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/@vite/client:367
+[  565180ms] [ERROR] React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. asChild aschild @ http://localhost:5173/@vite/client:367

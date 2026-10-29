@@ -15,12 +15,13 @@ function create_pending_donation(array $input): array
         fail('block_not_found', 'Window not found.', 404);
     }
 
-    if (get_setting('donation_mode', 'multiple') === 'single') {
-        $paidQuery = db()->prepare("SELECT id FROM donations WHERE block_id = ? AND status = 'paid' LIMIT 1");
-        $paidQuery->execute([(int)$block['id']]);
-        if ($paidQuery->fetch() !== false) {
-            fail('block_closed', 'This window is fully lit.', 409);
-        }
+    $paidCount = block_donor_count((int)$block['id']);
+    $maxDonors = setting_int('max_donors_per_block', 1);
+    if ($paidCount >= $maxDonors) {
+        fail('block_full', 'This window is fully lit.', 409);
+    }
+    if (get_setting('donation_mode', 'multiple') === 'single' && $paidCount > 0) {
+        fail('block_closed', 'This window is fully lit.', 409);
     }
 
     $currency = strtoupper(trim((string)($input['currency'] ?? '')));

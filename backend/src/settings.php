@@ -58,6 +58,7 @@ function public_settings_payload(): array
 {
     return [
         'donationMode' => get_setting('donation_mode', 'multiple'),
+        'maxDonorsPerBlock' => setting_int('max_donors_per_block', 1),
         'minimums' => [
             'USD' => setting_int('min_amount_usd', 10),
             'INR' => setting_int('min_amount_inr', 500),
@@ -77,6 +78,7 @@ function admin_settings_payload(): array
 {
     return [
         'donationMode' => get_setting('donation_mode', 'multiple'),
+        'maxDonorsPerBlock' => setting_int('max_donors_per_block', 1),
         'showDonorEmail' => setting_bool('show_donor_email'),
         'gstEnabled' => setting_bool('gst_enabled'),
         'gstPercent' => setting_int('gst_percent', 18),

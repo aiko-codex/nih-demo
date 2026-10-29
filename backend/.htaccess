@@ -4,6 +4,9 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  RewriteRule ^(?:src|database|\.git)(?:/|$) - [NC,F,L]
+  RewriteRule (?:^|/)(?:config\.(?:local|example)\.php|.*\.(?:sql|md))$ - [NC,F,L]
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.php [QSA,L]
@@ -17,6 +20,6 @@ DirectoryIndex index.php
   php_value post_max_size 70M
 </IfModule>
 
-<FilesMatch "\.(sql|local\.php|example\.php)$">
+<FilesMatch "(?i)^(?:config\.(?:local|example)\.php|.*\.(?:sql|md))$">
   Require all denied
 </FilesMatch>

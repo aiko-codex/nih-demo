@@ -33,15 +33,6 @@ export default function BlockDetailsTab({ block, onChange }) {
             onChange={(event) => onChange("tagline", event.target.value)}
           />
         </SettingField>
-        <SettingField label="Floor">
-          <Input
-            type="number"
-            min="1"
-            max="10"
-            value={block.floor}
-            onChange={(event) => onChange("floor", Number(event.target.value))}
-          />
-        </SettingField>
         <div className="flex items-center gap-3">
           <Switch
             checked={block.isPublished}

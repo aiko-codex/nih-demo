@@ -14,6 +14,7 @@ export default function SettingsPage() {
     if (!settingsQuery.data) return;
     setSettings({
       ...settingsQuery.data,
+      maxDonorsPerBlock: settingsQuery.data.maxDonorsPerBlock ?? 1,
       presetAmountsUsd: settingsQuery.data.presetAmountsUsd.join(", "),
       presetAmountsInr: settingsQuery.data.presetAmountsInr.join(", "),
     });

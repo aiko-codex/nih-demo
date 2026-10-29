@@ -6,7 +6,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ExplorePage from "@/features/explore/ExplorePage";
 import DonationReturnPage from "@/features/donate/DonationReturnPage";
-import DevBuildingPage from "@/features/building/DevBuildingPage";
+import AboutPage from "@/features/about/AboutPage";
+import ContactPage from "@/features/contact/ContactPage";
 
 const LoginPage = lazy(() => import("@/features/crm/LoginPage"));
 const DashboardPage = lazy(() => import("@/features/crm/DashboardPage"));
@@ -53,11 +54,12 @@ export default function App() {
         <TooltipProvider>
           <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
-              <Route path="/dev/3d" element={<DevBuildingPage />} />
               <Route path="/" element={<ExplorePage />} />
               <Route path="/f/:floor" element={<ExplorePage />} />
               <Route path="/b/:code" element={<ExplorePage />} />
               <Route path="/donate/return" element={<DonationReturnPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/crm/*" element={<CrmRoutes />} />
             </Routes>
           </BrowserRouter>
@@ -67,3 +69,5 @@ export default function App() {
     </QueryClientProvider>
   );
 }
+
+

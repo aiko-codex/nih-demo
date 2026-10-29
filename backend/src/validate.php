@@ -119,6 +119,30 @@ function field_code(array $body, string $key, bool $required = false): ?string
     return $value;
 }
 
+function field_slot_key(array $body, string $key, bool $required = false): ?string
+{
+    if (!array_key_exists($key, $body) || $body[$key] === null) {
+        if ($required) {
+            fail('validation_error', 'Field "' . $key . '" is required.', 422);
+        }
+        return null;
+    }
+
+    $value = $body[$key];
+    if (!is_string($value)) {
+        fail('validation_error', 'Field "' . $key . '" must be a string or null.', 422);
+    }
+
+    $value = trim($value);
+    if ($value === '') {
+        return null;
+    }
+    if (preg_match('/^R(0[1-9]|10)-C(0[1-9]|1[0-9]|2[0-2])$/', $value) !== 1) {
+        fail('validation_error', 'Field "' . $key . '" must look like R01-C05.', 422);
+    }
+    return $value;
+}
+
 function field_int_list(array $body, string $key, bool $required = false, ?int $min = null, ?int $max = null): ?array
 {
     if (!array_key_exists($key, $body) || $body[$key] === null) {

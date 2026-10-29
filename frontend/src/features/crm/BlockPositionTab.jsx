@@ -1,9 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import WindowPicker from "./WindowPicker";
+import SlotPicker from "./SlotPicker";
 
 export default function BlockPositionTab({
   block,
-  settings,
   blocks,
   currentId,
   onChange,
@@ -11,20 +10,12 @@ export default function BlockPositionTab({
   return (
     <Card>
       <CardContent className="space-y-4 p-5">
-        <WindowPicker
-          floor={block.floor}
-          face={block.face}
-          start={block.windowStart}
-          span={block.windowSpan}
-          windows={settings}
+        <SlotPicker
           blocks={blocks}
           currentId={currentId}
-          onChange={onChange}
+          slotKey={block.slotKey}
+          onChange={(slotKey) => onChange({ slotKey })}
         />
-        <p className="text-sm text-muted-foreground">
-          Selected columns: {block.windowStart + 1}–
-          {block.windowStart + block.windowSpan}
-        </p>
       </CardContent>
     </Card>
   );

@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useBlock, useBlocks, useSaveBlock, useSettings } from "./useAdmin";
+import { useBlock, useBlocks, useSaveBlock } from "./useAdmin";
 import BlockDetailsTab from "./BlockDetailsTab";
 import BlockPositionTab from "./BlockPositionTab";
 import BlockStoryTab from "./BlockStoryTab";
@@ -15,7 +15,6 @@ export default function BlockEditPage() {
   const isNew = !id || id === "new";
   const { data: fetched, isLoading } = useBlock(isNew ? null : id);
   const { data: blockData } = useBlocks();
-  const { data: settings = {} } = useSettings();
   const save = useSaveBlock();
   const queryClient = useQueryClient();
   const nav = useNavigate();
@@ -31,7 +30,9 @@ export default function BlockEditPage() {
     windowSpan: 1,
     isPublished: false,
     storyHtml: "",
+    slotKey: null,
   });
+  const [slotError, setSlotError] = useState("");
   useEffect(() => {
     if (block)
       setForm({
@@ -40,10 +41,12 @@ export default function BlockEditPage() {
         windowStart: Number(block.windowStart || 0),
         windowSpan: Number(block.windowSpan || 1),
         isPublished: Boolean(block.isPublished),
+        slotKey: block.slotKey ?? null,
       });
   }, [fetched]);
   function set(key, value) {
     setForm((currentBlock) => ({ ...currentBlock, [key]: value }));
+    if (key === "slotKey") setSlotError("");
   }
   async function submit(event) {
     event.preventDefault();
@@ -60,11 +63,19 @@ export default function BlockEditPage() {
         storyHtml: form.storyHtml,
         sortOrder: form.sortOrder ?? 0,
         isPublished: form.isPublished,
+        slotKey: form.slotKey,
       });
+      setSlotError("");
       toast.success("Block saved");
       nav(`/crm/blocks/${result?.id || id || ""}`);
-    } catch (err) {
-      toast.error(err.message || "Could not save block");
+    } catch (error) {
+      if (error.code === "slot_taken") {
+        setSlotError(
+          "This building slot is already assigned. Choose another slot.",
+        );
+        return;
+      }
+      toast.error(error.message || "Could not save block");
     }
   }
   if (!isNew && isLoading) return <main className="p-7">Loading block…</main>;
@@ -97,13 +108,17 @@ export default function BlockEditPage() {
           <TabsContent value="position">
             <BlockPositionTab
               block={form}
-              settings={settings}
               blocks={all}
               currentId={id}
               onChange={(changes) =>
                 setForm((currentBlock) => ({ ...currentBlock, ...changes }))
               }
             />
+            {slotError && (
+              <p className="mt-3 text-sm text-destructive" role="alert">
+                {slotError}
+              </p>
+            )}
           </TabsContent>
           <TabsContent value="story">
             <BlockStoryTab

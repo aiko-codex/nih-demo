@@ -37,6 +37,21 @@ export default function DonationSettingsCard({ settings, onChange }) {
           checked={settings.showDonorEmail}
           onChange={(value) => onChange("showDonorEmail", value)}
         />
+        <div className="max-w-xs">
+          <SettingField label="Max donors per block">
+            <Input
+              type="number"
+              min="1"
+              value={settings.maxDonorsPerBlock ?? 1}
+              onChange={(event) =>
+                onChange(
+                  "maxDonorsPerBlock",
+                  Math.max(1, Number(event.target.value)),
+                )
+              }
+            />
+          </SettingField>
+        </div>
         <div className="flex flex-wrap items-center gap-3">
           <Switch
             checked={settings.gstEnabled}

@@ -1,6 +1,33 @@
-import { Card, CardContent } from "@/components/ui/card";
+function initials(name) {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
 
 export default function DonorList({ donors = [] }) {
-  if (!donors.length) return <p className="text-sm text-muted-foreground">Be the first to light this window.</p>;
-  return <ul className="space-y-2">{donors.map((donor, index) => <li key={`${donor.name}-${index}`}><Card><CardContent className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 p-3"><div><span className="font-medium">{donor.name}</span>{donor.company && <span className="ml-2 text-sm text-muted-foreground">{donor.company}</span>}</div>{donor.email && <span className="text-xs text-muted-foreground">{donor.email}</span>}</CardContent></Card></li>)}</ul>;
+  if (!donors.length) {
+    return <p className="text-sm text-muted-foreground">No sponsor yet. Yours could be the first light here.</p>;
+  }
+
+  return (
+    <ul className="divide-y divide-border">
+      {donors.map((donor, index) => (
+        <li key={`${donor.name}-${index}`} className="flex items-center gap-3 py-3">
+          <span className="grid size-9 shrink-0 place-items-center rounded-full bg-primary/15 text-xs font-medium
+            text-primary">
+            {initials(donor.name)}
+          </span>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-medium">{donor.name}</p>
+            <p className="truncate text-xs text-muted-foreground">
+              {[donor.company, donor.email].filter(Boolean).join(" · ")}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
 }

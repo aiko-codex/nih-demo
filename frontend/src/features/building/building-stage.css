@@ -1,0 +1,103 @@
+@keyframes building-slot-glow {
+  0%,
+  100% {
+    opacity: 0.82;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.building-stage-frame {
+  touch-action: none;
+  cursor: grab;
+}
+
+.building-stage-frame:active {
+  cursor: grabbing;
+}
+
+.building-stage {
+  transform-origin: 0 0;
+  transition: transform 520ms cubic-bezier(0.22, 0.8, 0.24, 1);
+  will-change: transform;
+}
+
+.building-stage-dragging {
+  transition: none;
+}
+
+.building-slot {
+  cursor: pointer;
+  outline: none;
+  transition: background-color 180ms ease-out, box-shadow 180ms ease-out;
+}
+
+.building-slot-open {
+  box-shadow: inset 0 0 0 1px rgb(255 214 150 / 22%);
+}
+
+.building-slot-open:hover,
+.building-slot-open:focus-visible,
+.building-slot-open[data-focused] {
+  background-color: rgb(255 214 150 / 14%);
+  box-shadow: inset 0 0 0 1px rgb(255 214 150 / 85%);
+}
+
+.building-slot-lit {
+  background:
+    radial-gradient(ellipse at 50% 60%,
+      color-mix(in srgb, var(--slot-color) 95%, white) 0%,
+      color-mix(in srgb, var(--slot-color) 70%, transparent) 55%,
+      color-mix(in srgb, var(--slot-color) 35%, transparent) 100%);
+  box-shadow:
+    0 0 18px color-mix(in srgb, var(--slot-color) 60%, transparent),
+    0 0 42px color-mix(in srgb, var(--slot-color) 28%, transparent);
+  animation: building-slot-glow 3.2s ease-in-out infinite;
+}
+
+.building-slot-lit:hover,
+.building-slot-lit:focus-visible,
+.building-slot-lit[data-focused] {
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 80%),
+    0 0 26px color-mix(in srgb, var(--slot-color) 80%, transparent);
+}
+
+.building-slot-tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  z-index: 30;
+  width: max-content;
+  max-width: 14rem;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgb(10 12 20 / 88%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  text-align: left;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 4px);
+  transition: opacity 150ms ease-out, transform 150ms ease-out;
+}
+
+.building-slot:hover .building-slot-tip,
+.building-slot:focus-visible .building-slot-tip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .building-stage,
+  .building-slot,
+  .building-slot-tip {
+    transition-duration: 0.01ms;
+  }
+
+  .building-slot-lit {
+    animation: none;
+    opacity: 1;
+  }
+}

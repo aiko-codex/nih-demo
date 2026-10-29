@@ -43,6 +43,11 @@ export default function BlocksPage() {
       { accessorKey: "floor", header: "Floor" },
       { accessorKey: "face", header: "Face" },
       {
+        accessorKey: "slotKey",
+        header: "Slot",
+        cell: ({ row }) => row.original.slotKey || "—",
+      },
+      {
         id: "windows",
         header: "Windows",
         cell: ({ row }) =>

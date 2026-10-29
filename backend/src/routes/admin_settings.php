@@ -5,6 +5,7 @@ function update_admin_settings(array $body): array
 {
     $allowedKeys = [
         'donationMode',
+        'maxDonorsPerBlock',
         'showDonorEmail',
         'gstEnabled',
         'gstPercent',
@@ -31,6 +32,9 @@ function update_admin_settings(array $body): array
 
     if (array_key_exists('donationMode', $body)) {
         $changes['donation_mode'] = (string)field_enum($body, 'donationMode', ['single', 'multiple'], true);
+    }
+    if (array_key_exists('maxDonorsPerBlock', $body)) {
+        $changes['max_donors_per_block'] = (string)field_int($body, 'maxDonorsPerBlock', true, 1);
     }
     if (array_key_exists('showDonorEmail', $body)) {
         $changes['show_donor_email'] = field_bool($body, 'showDonorEmail', true) ? '1' : '0';
