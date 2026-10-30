@@ -1,0 +1,14 @@
+{
+ "code": "5A",
+ "name": "Charity Clinic",
+ "tagline": "Free evening clinic and dispensary",
+ "floor": 5,
+ "face": "right",
+ "windowStart": 0,
+ "windowSpan": 2,
+ "storyHtml": "<p>The clinic offers free check-ups, physiotherapy referrals and a small dispensary. A doctor and two nurses hold hours every weekday evening.</p><p>It is deliberately on the fifth floor: quiet, away from the street, and close to the rooftop garden where patients wait.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

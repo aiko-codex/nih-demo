@@ -1,0 +1,29 @@
+{
+ "code": "M04",
+ "name": "iCARE M04",
+ "tagline": "Mock window for preview",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 10,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for iCARE M04. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 14,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 4",
+   "company": null
+  }
+ ]
+}

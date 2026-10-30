@@ -1,0 +1,14 @@
+{
+ "code": "7A",
+ "name": "Reflexology",
+ "tagline": "Quiet reflexology and restorative massage",
+ "floor": 7,
+ "face": "front",
+ "windowStart": 0,
+ "windowSpan": 2,
+ "storyHtml": "<p>A quiet treatment room for reflexology and restorative massage. Sessions are short, low-cost and booked by the half hour.</p><p>The room looks over the west wing, and the late sun through the window does half the calming before the session begins.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

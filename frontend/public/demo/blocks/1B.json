@@ -1,0 +1,14 @@
+{
+ "code": "1B",
+ "name": "Hall of Friendship",
+ "tagline": "A lounge that keeps conversations going",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 0,
+ "windowSpan": 2,
+ "storyHtml": "<p>Friendship is a lounge where long-standing members meet new ones. Long tables, low lamps and a pantry keep conversations going past the scheduled hour.</p><p>Nothing here is sold. The room exists so that people who give to the Hub can also find each other.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

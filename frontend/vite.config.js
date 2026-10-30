@@ -10,11 +10,14 @@ export default defineConfig({
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
   server: {
+    allowedHosts: ['.ngrok-free.app', '.ngrok-free.dev', '.ngrok.app', '.ngrok.io'],
     proxy: {
       '/api': {
         target: 'http://localhost/c.cpanel/3d_stall_design_web/NIH/backend',
-        changeOrigin: true,
         rewrite: (requestPath) => requestPath.replace(/^\/api/, ''),
+      },
+      '/c.cpanel': {
+        target: 'http://localhost',
       },
     },
   },

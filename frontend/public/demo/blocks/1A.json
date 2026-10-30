@@ -1,0 +1,14 @@
+{
+ "code": "1A",
+ "name": "Hall of Unity",
+ "tagline": "Where the whole community gathers",
+ "floor": 1,
+ "face": "left",
+ "windowStart": 0,
+ "windowSpan": 2,
+ "storyHtml": "<p>The ground floor opens into a wide hall built for gathering. On any evening it can hold a lecture, a celebration or a quiet circle of neighbours.</p><p>Its tall windows face the street so the life inside is visible from the road. The hall is the first room every visitor meets, and it sets the tone for the floors above.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

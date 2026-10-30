@@ -1,0 +1,29 @@
+{
+ "code": "M28",
+ "name": "Health Desk M28",
+ "tagline": "Mock window for preview",
+ "floor": 5,
+ "face": "front",
+ "windowStart": 13,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Health Desk M28. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 62,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 28",
+   "company": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "code": "M10",
+ "name": "Elders Circle M10",
+ "tagline": "Mock window for preview",
+ "floor": 2,
+ "face": "front",
+ "windowStart": 10,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Elders Circle M10. A community room supported by neighbours.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 26,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": []
+}

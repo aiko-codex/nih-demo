@@ -1,0 +1,24 @@
+{
+ "code": "M25",
+ "name": "Music Room M25",
+ "tagline": "Mock window for preview",
+ "floor": 5,
+ "face": "front",
+ "windowStart": 2,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Music Room M25. A community room supported by neighbours.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 56,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": []
+}

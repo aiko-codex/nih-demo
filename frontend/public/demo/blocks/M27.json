@@ -1,0 +1,47 @@
+{
+ "code": "M27",
+ "name": "Workshop M27",
+ "tagline": "Mock window for preview",
+ "floor": 5,
+ "face": "front",
+ "windowStart": 10,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Workshop M27. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 59,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 60,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 61,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 27",
+   "company": null
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "code": "7B",
+ "name": "Homeopathy",
+ "tagline": "Consulting hours and a small dispensary",
+ "floor": 7,
+ "face": "front",
+ "windowStart": 2,
+ "windowSpan": 2,
+ "storyHtml": "<p>Homeopathy shares the seventh floor with reflexology and keeps its own consulting hours. The shelves hold a small, carefully kept dispensary.</p><p>Consultations are free for students and elders, and the block is often the first stop for families new to the Hub.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

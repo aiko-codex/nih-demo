@@ -1,0 +1,47 @@
+{
+ "code": "M09",
+ "name": "Youth Lounge M09",
+ "tagline": "Mock window for preview",
+ "floor": 2,
+ "face": "front",
+ "windowStart": 6,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Youth Lounge M09. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 23,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 24,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 25,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 9",
+   "company": null
+  }
+ ]
+}

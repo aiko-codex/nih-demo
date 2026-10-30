@@ -1,0 +1,47 @@
+{
+ "code": "M06",
+ "name": "Reading Nook M06",
+ "tagline": "Mock window for preview",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 17,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Reading Nook M06. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 17,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 18,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 19,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 6",
+   "company": null
+  }
+ ]
+}

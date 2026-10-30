@@ -1,0 +1,14 @@
+{
+ "code": "1G",
+ "name": "iSHARE",
+ "tagline": "Library and a simple swap shelf",
+ "floor": 1,
+ "face": "left",
+ "windowStart": 4,
+ "windowSpan": 2,
+ "storyHtml": "<p>iSHARE is the Hub library and a swap shelf. Books, tools and games move in and out on a simple honesty system.</p><p>A single window is enough to read by, which is why this block can be lit with a modest donation.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

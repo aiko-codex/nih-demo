@@ -1,0 +1,29 @@
+{
+ "code": "M01",
+ "name": "Hall of Hope M01",
+ "tagline": "Mock window for preview",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 1,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Hall of Hope M01. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 8,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 1",
+   "company": null
+  }
+ ]
+}

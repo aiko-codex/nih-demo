@@ -31,7 +31,19 @@ async function handleResponse(response) {
   return payload && Object.hasOwn(payload, "data") ? payload.data : payload;
 }
 
+const isDemo = import.meta.env.VITE_DEMO === "true";
+
+async function demoRequest(method, path) {
+  if (method !== "GET") {
+    throw new ApiError("demo_mode", "This is a demo. Payments and admin are switched off.", 403);
+  }
+  const response = await fetch(`${import.meta.env.BASE_URL}demo${path}.json`);
+  if (!response.ok) throw new ApiError("not_found", "Not found.", 404);
+  return response.json();
+}
+
 async function request(method, path, body, headers) {
+  if (isDemo) return demoRequest(method, path);
   const requestHeadersValue = requestHeaders(method, headers);
   const options = { method, credentials: "include", headers: requestHeadersValue };
   if (body !== undefined) {

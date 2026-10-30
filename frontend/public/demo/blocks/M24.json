@@ -1,0 +1,47 @@
+{
+ "code": "M24",
+ "name": "iCARE M24",
+ "tagline": "Mock window for preview",
+ "floor": 4,
+ "face": "front",
+ "windowStart": 19,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for iCARE M24. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 53,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 54,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 55,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 24",
+   "company": null
+  }
+ ]
+}

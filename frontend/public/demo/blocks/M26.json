@@ -1,0 +1,38 @@
+{
+ "code": "M26",
+ "name": "Reading Nook M26",
+ "tagline": "Mock window for preview",
+ "floor": 5,
+ "face": "front",
+ "windowStart": 6,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Reading Nook M26. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 57,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 58,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 26",
+   "company": null
+  }
+ ]
+}

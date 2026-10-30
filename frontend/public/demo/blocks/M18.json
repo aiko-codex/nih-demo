@@ -1,0 +1,47 @@
+{
+ "code": "M18",
+ "name": "Health Desk M18",
+ "tagline": "Mock window for preview",
+ "floor": 3,
+ "face": "front",
+ "windowStart": 18,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Health Desk M18. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 41,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 42,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 43,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 18",
+   "company": null
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "donationMode": "multiple",
+ "maxDonorsPerBlock": 1,
+ "minimums": {
+  "USD": 10,
+  "INR": 500
+ },
+ "presets": {
+  "USD": [
+   100,
+   500,
+   1000,
+   5000
+  ],
+  "INR": [
+   5000,
+   25000,
+   100000,
+   500000
+  ]
+ },
+ "gst": {
+  "enabled": false,
+  "percent": 18
+ }
+}

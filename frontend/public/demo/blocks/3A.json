@@ -1,0 +1,14 @@
+{
+ "code": "3A",
+ "name": "STEM Lab",
+ "tagline": "Science kits, microscopes and mentors",
+ "floor": 3,
+ "face": "front",
+ "windowStart": 0,
+ "windowSpan": 2,
+ "storyHtml": "<p>The lab holds microscopes, a 3D printer and kits for school robotics teams. Weekend batches rotate through experiments that most schools cannot afford to run.</p><p>Mentors are practising engineers who give two hours a month. The lab keeps a shelf of student projects that failed, because the failures teach the next batch.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

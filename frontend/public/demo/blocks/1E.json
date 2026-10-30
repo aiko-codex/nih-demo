@@ -1,0 +1,14 @@
+{
+ "code": "1E",
+ "name": "iSKILL",
+ "tagline": "Short courses that build practical skills",
+ "floor": 1,
+ "face": "left",
+ "windowStart": 2,
+ "windowSpan": 2,
+ "storyHtml": "<p>iSKILL is a training room for short courses: tailoring, bookkeeping, spoken English and computer basics. Classes are small and mostly free.</p><p>Graduates often return as teachers, so the room slowly builds its own faculty from the neighbourhood.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

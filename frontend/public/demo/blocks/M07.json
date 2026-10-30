@@ -1,0 +1,29 @@
+{
+ "code": "M07",
+ "name": "Workshop M07",
+ "tagline": "Mock window for preview",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 20,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Workshop M07. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 20,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 7",
+   "company": null
+  }
+ ]
+}

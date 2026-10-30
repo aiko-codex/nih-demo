@@ -1,0 +1,14 @@
+{
+ "code": "1C",
+ "name": "iArts",
+ "tagline": "Studio for drawing, murals and small shows",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 2,
+ "windowSpan": 2,
+ "storyHtml": "<p>iArts is a studio for drawing, mural work and small exhibitions. Visiting artists run open sessions and the walls rotate with work from local schools.</p><p>The room keeps its north light and its mess: paint, paper and half-finished panels are part of the design.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [],
+ "donors": []
+}

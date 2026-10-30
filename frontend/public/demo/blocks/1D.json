@@ -1,0 +1,74 @@
+{
+ "code": "1D",
+ "name": "iSEVA",
+ "tagline": "Service drives and volunteer coordination",
+ "floor": 1,
+ "face": "front",
+ "windowStart": 4,
+ "windowSpan": 2,
+ "storyHtml": "<p>iSEVA coordinates service: food drives, blood camps and neighbourhood cleanups. Volunteers meet here before they head out, and the noticeboard tracks what the city needs next.</p><p>The block runs on schedules rather than equipment, which makes it one of the cheapest rooms to light and one of the busiest.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 6,
+   "kind": "image",
+   "url": "/demo/uploads/blocks/4/f336eb55e3d9986bfcbde1b2e2b439fe.webp",
+   "embedUrl": null,
+   "caption": "",
+   "width": 1920,
+   "height": 960
+  },
+  {
+   "id": 63,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 64,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 65,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 66,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 67,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Priya Sharma",
+   "company": "Sharma Textiles"
+  }
+ ]
+}

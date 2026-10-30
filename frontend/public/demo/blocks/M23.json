@@ -1,0 +1,38 @@
+{
+ "code": "M23",
+ "name": "Garden Room M23",
+ "tagline": "Mock window for preview",
+ "floor": 4,
+ "face": "front",
+ "windowStart": 16,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Garden Room M23. A community room supported by neighbours.</p>",
+ "isLit": true,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 51,
+   "kind": "image",
+   "url": "/demo/uploads/mock/3.jpg",
+   "embedUrl": null,
+   "caption": "Volunteers at work",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 52,
+   "kind": "image",
+   "url": "/demo/uploads/mock/4.jpg",
+   "embedUrl": null,
+   "caption": "Evening classes",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": [
+  {
+   "name": "Mock Donor 23",
+   "company": null
+  }
+ ]
+}

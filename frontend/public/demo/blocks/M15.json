@@ -1,0 +1,42 @@
+{
+ "code": "M15",
+ "name": "Music Room M15",
+ "tagline": "Mock window for preview",
+ "floor": 3,
+ "face": "front",
+ "windowStart": 9,
+ "windowSpan": 1,
+ "storyHtml": "<p>Mock story for Music Room M15. A community room supported by neighbours.</p>",
+ "isLit": false,
+ "isClosed": false,
+ "media": [
+  {
+   "id": 35,
+   "kind": "image",
+   "url": "/demo/uploads/mock/5.jpg",
+   "embedUrl": null,
+   "caption": "Neighbours gathering",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 36,
+   "kind": "image",
+   "url": "/demo/uploads/mock/1.jpg",
+   "embedUrl": null,
+   "caption": "Opening day",
+   "width": null,
+   "height": null
+  },
+  {
+   "id": 37,
+   "kind": "image",
+   "url": "/demo/uploads/mock/2.jpg",
+   "embedUrl": null,
+   "caption": "The common hall",
+   "width": null,
+   "height": null
+  }
+ ],
+ "donors": []
+}
